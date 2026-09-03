@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.age-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    width: min(100%, 500px);
+    min-height: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    background-color: #fffaf2;
+}
+.age-header{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.age-dob-input{
+    width: min(100%, 280px);
+    min-height: 42px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #777;
+    background-color: white;
+}
+
+.calculate-btn{
+    font-size: 1.2rem;
+    width: min(100%, 280px);
+    min-height: 44px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.calculate-btn:hover,
+.calculate-btn:focus-visible{
+    background-color: #333;
+}
+
+.age-result{
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px){
+    body{
+        padding: 12px;
+    }
+
+    .age-container{
+        padding: 24px 16px;
+    }
+
+    .age-header{
+        font-size: 1.6rem;
+    }
+
+    label{
+        font-size: 1rem;
+    }
+
+    .age-dob-input,
+    .calculate-btn{
+        width: 100%;
+        max-width: none;
+    }
+}
